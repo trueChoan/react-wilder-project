@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import WilderList from "./components/WilderList";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div >
+			<header>
+				<div className="container">
+					<h1>Wilders Book</h1>
+				</div>
+			</header>
+			<main className="container">
+				<h2>Wilders</h2>
+        <section className="card-row">
+
+<WilderList />
+</section>
+
+			</main>
+			<footer>
+				<div className="container">
+					<p>&copy; 2022 Wild Code School</p>
+				</div>
+			</footer>
+		</div>
+	);
 }
 
 export default App;
